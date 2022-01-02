@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ryan Kadri - Portfolio</title>
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-light fixed-top bg-light shadow-sm">
+      <div class="container-lg">
+        <a class="navbar-brand text-danger fw-bold fs-4" href="#home"
+          >Ryan Kadri</a
+        >
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary btn-danger px-3"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="dropdownMenuButton1"
+          >
+            <li><a class="dropdown-item" href="#home">Accueil</a></li>
+            <li><a class="dropdown-item" href="#about">A propos</a></li>
+            <li><a class="dropdown-item" href="#projects">Projets</a></li>
+            <li><a class="dropdown-item" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home py-5" id="home">
+      <div class="container-lg">
+        <div class="row min-vh-100 align-items-center align-content-center">
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="home-img text-center">
+              <img
+                src="images/profile-image0.jpg"
+                class="rounded-circle mw-100"
+                alt="Photo de profil"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+            <div class="home-text">
+              <h1 class="fs-2 text-dark">Ryan Kadri</h1>
+              <h2 class="text-danger text-uppercase fs-1 fw-bold">
+                Développeur back-end
+              </h2>
+              <p class="mt-4 text-muted">
+                Jeune développeur et étudiant en informatique, je suis motivé et
+                toujours prêt à apprendre de nouvelles choses ! <br /><br />
+                Disponible pour un stage de fin d'étude suivi d'une embauche si
+                mon profil vous convient.
+              </p>
+              <a href="#projects" class="btn btn-danger px-3 mt-3"
+                >Mes projets</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about py-5">
+      <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">Qui suis-je ?</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-text">
+              <h3 class="fs-4 mb-5">Étudiant en DUT Informatique</h3>
+              <p class="text-muted">
+                Grâce à ma formation en DUT Informatique <br />
+                complétée par une formation de <br />
+                développeur web full stack sur Udemy, <br />
+                je suis principalement formé sur les langages suivants.
+              </p>
+            </div>
+            <div class="row text-center text-uppercase my-5">
+              <div class="col-lg-12 d-flex align-items-center">
+                <a href="#" class="btn px-3 btn-danger me-5"
+                  >Télécharger mon CV</a
+                >
+                <div class="social-links">
+                  <a
+                    href="https://linkedin.com/in/r-kadri"
+                    class="text-dark me-2 fs-3"
+                    target="blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="#" class="text-dark me-2 fs-3" target="blank"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    href="https://github.com/r-kadri"
+                    class="text-dark me-2 fs-3"
+                    target="blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="skill-item mb-4">
+              <h3 class="fs-8">Html</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 90%"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-4">
+              <h3 class="fs-8">Css</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 40%"
+                  aria-valuenow="40"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-4">
+              <h3 class="fs-8">JavaScript</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 50%"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-4">
+              <h3 class="fs-8">Php</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 70%"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-4">
+              <h3 class="fs-8">Laravel</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 70%"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-4">
+              <h3 class="fs-8">Symphony</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 5%"
+                  aria-valuenow="5"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-4">
+              <h3 class="fs-8">MySQL</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 85%"
+                  aria-valuenow="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-4">
+              <h3 class="fs-8">Java</h3>
+              <div class="progress" style="height: 5px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 80%"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects py-5">
+      <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">Derniers Projets</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md6 col-lg-4">
+            <div class="projects-item">
+              <img
+                src="images/maths.jpg"
+                class="w-100 img-thumbnail"
+                alt="Image maths"
+              />
+              <h3 class="fs-5 my-2">
+                Site d'exercices en Maths avec classement (en cours)
+              </h3>
+            </div>
+          </div>
+          <div class="col-md6 col-lg-4">
+            <div class="projects-item">
+              <img
+                src="images/marathon.jfif"
+                class="w-100 img-thumbnail"
+                alt="Image site marathon"
+              />
+              <h3 class="text-capitalize fs-5 my-2">
+                Marathon Web - Université
+              </h3>
+            </div>
+          </div>
+          <div class="col-md6 col-lg-4">
+            <div class="projects-item">
+              <img
+                src="images/sokoban.png"
+                class="w-100 img-thumbnail"
+                alt="Image jeu Sokoban"
+              />
+              <h3 class="text-capitalize fs-5 my-2">Jeu Python : Sokoban</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="im-available py-5 bg-danger">
+      <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <p class="text-light fs-5">Mon profil vous intéresse ?</p>
+            <h2 class="fs-1 text-white mb-4">
+              Je suis disponible pour un stage de fin d'étude et/ou embauche
+            </h2>
+            <a href="#contact" class="btn btn-outline-light">Contactez moi !</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact py-5">
+      <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">Contactez moi</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="contact-item d-flex mb-3">
+              <div class="icon fs-4 text-danger">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="text ms-3">
+                <h3 class="fs-5">Email</h3>
+                <p class="text-muted">ryankadri.dev@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item d-flex mb-3">
+              <div class="icon fs-4 text-danger">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <div class="text ms-3">
+                <h3 class="fs-5">Téléphone Mobile</h3>
+                <p class="text-muted">06 25 48 44 72</p>
+              </div>
+            </div>
+            <div class="contact-item d-flex mb-3">
+              <div class="icon fs-4 text-danger">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="text ms-3">
+                <h3 class="fs-5">Localisation</h3>
+                <p class="text-muted">Lens, Pas-de-Calais - 62300</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="contact-form">
+              <form>
+                <div class="row">
+                  <div class="col-lg-6 mb-4">
+                    <input
+                      type="text"
+                      placeholder="Votre nom / entreprise"
+                      class="
+                        form-control form-control-lg
+                        fs-6
+                        border-0
+                        shadow-sm
+                      "
+                    />
+                  </div>
+                  <div class="col-lg-6 mb-4">
+                    <input
+                      type="text"
+                      placeholder="Votre Email"
+                      class="
+                        form-control form-control-lg
+                        fs-6
+                        border-0
+                        shadow-sm
+                      "
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 mb-4">
+                    <input
+                      type="text"
+                      placeholder="Objet"
+                      class="
+                        form-control form-control-lg
+                        fs-6
+                        border-0
+                        shadow-sm
+                      "
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 mb-4">
+                    <textarea
+                      rows="5"
+                      placeholder="Votre Message"
+                      class="
+                        form-control form-control-lg
+                        fs-6
+                        border-0
+                        shadow-sm
+                      "
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <button type="submit" class="btn btn-danger px-3">
+                      Envoyer le Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer border-top py-4">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="m-0 text-center text-muted">&copy; 2022 Ryan Kadri</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
