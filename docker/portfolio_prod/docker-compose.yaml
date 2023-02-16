@@ -1,0 +1,50 @@
+version: '3.7'
+services:
+    db_portfolio_prod:
+        image: 'mysql:latest'
+        restart: always
+        container_name: db_portfolio_prod
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+            MYSQL_DATABASE: main
+        networks:
+            - web
+
+    www_portfolio_prod:
+        container_name: www_portfolio_prod
+        image: 'ryankadri/portfolio:latest'
+        restart: always
+        volumes:
+            - ./vhosts:/etc/apache2/sites-enabled
+            - ../../:/var/www
+        environment:
+            COMPOSER_MEMORY_LIMIT: 1
+        labels:
+            - traefik.enable = true
+            - traefik.http.middlewares.https-redirect.redirectscheme.scheme=https
+            - traefik.http.middlewares.https-redirect.redirectscheme.permanent=true
+            - traefik.routers.ryankadri-https.rule=Host('ryankadri.com')
+            - traefik.routers.ryankadri-https.tls=true
+            - traefik.routers.ryankadri-https.tls.certresolver=letsencrypt
+            - traefik.http.middlewares.SslHeader.headers.frameDeny=true
+            - traefik.http.middlewares.SslHeader.headers.SslRedirect=true
+            - traefik.http.middlewares.SslHeader.headers.AccessControlAllowMethods=GET,OPTIONS,PUT
+            - traefik.http.middlewares.SslHeader.headers.AccessControlAllowOrigin=origin-list-or-null
+            - traefik.http.middlewares.SslHeader.headers.AccessControlMaxAge=100
+            - traefik.http.middlewares.SslHeader.headers.AddVaryHeader=true
+            - traefik.http.middlewares.SslHeader.headers.BrowserXssFilter=true
+            - traefik.http.middlewares.SslHeader.headers.ContentTypeNosniff=true
+            - traefik.http.middlewares.SslHeader.headers.ForceSTSHeader=true
+            - traefik.http.middlewares.SslHeader.headers.STSIncludeSubdomains=true
+            - traefik.http.middlewares.SslHeader.headers.STSPreload=true
+
+            - traefik.http.middlewares.SslHeader.headers.ReferrerPolicy=same-origin
+            - traefik.http.middlewares.SslHeader.headers.FeaturePolicy="vibrate 'self'"
+            - traefik.http.middlewares.SslHeader.headers.STSSeconds=315360000
+        networks:
+            - web
+
+networks:
+    web:
+        name: web
+        external: true
