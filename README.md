@@ -7,8 +7,6 @@ This is my personal website | ongoing.
 * PHP 8.1
 * Composer
 * Symfony CLI
-* Docker
-* Docker-compose
 
 You can check the requirements by running this Symfony CLI command :
 ```bash
@@ -18,6 +16,9 @@ symfony check:requirements
 ## Run
 
 ```bash
-docker compose up -d
+composer install --no-dev
+npm install
+npm run build
+symfony serve
 ```
 
