@@ -1,6 +1,7 @@
 # Ryan Kadri - Portfolio
 
-This is my personal website | ongoing.
+This is my personal website | ongoing.  
+http://ryankadri.com
 
 ## Required
 
