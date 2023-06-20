@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ title }}{% endblock %}
+{% block body %}
+<nav class="navbar navbar-light fixed-top bg-light shadow-sm">
+    <div class="container-lg">
+        <a class="navbar-brand text-danger fw-bold fs-4" href="{{ path('app_home') }}"
+            >Ryan Kadri - Portfolio temporaire</a
+        >
+        <div class="dropdown">
+            <a href="{{path('app_home')}}" class="btn btn-secondary btn-danger px-3">Retour à l'accueil</a>
+        </div>
+    </div>
+</nav>
+<div class="container" style="margin-top:100px;">
+    <h1 class="text-center mb-5">Mon stage chez Lemon Interactive 🍋</h1>
+    <h3 class="mb-3">Principaux points abordés</h3>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Interventions diverses sur les sites des clients de l'agence (bug ou ajout de fonctionnalité)</li>
+        <li class="list-group-item">Méthodes de travail et d'organisation exemplaires</li>
+        <li class="list-group-item">Une bonne aissance orale pour communiquer avec l'équipe</li>
+        <li class="list-group-item">Connaissances approfondies sur les technos présentes dans le marché du web en général</li>
+        <li class="list-group-item">Hébergement des sites internet, dialogues avec l'hébergeur</li>
+        <li class="list-group-item">Éco-conception et performances des sites internet</li>
+        <li class="list-group-item">L'échange avec les clients</li>
+    </ul>
+
+    <h3 class="my-5">Remerciements</h3>
+    <p>Ce stage n'aurait évidemment pas été possible seul. C'est pourquoi je tiens à adresser mes plus sincères remerciements dans cette partie.
+    <br><br>Tout d'abord, je souhaite exprimer ma gratitude envers l'ensemble du personnel de <strong><a href="https://lemon-interactive.fr" class="text-dark" target="_blank">Lemon Interactive</a></strong>, une agence remarquablement humaine et authentique. Leur accueil inoubliable et leur respect envers chacun ont contribué à faire de chaque jour de travail un réel plaisir.
+    <br>Je tiens particulièrement à remercier <strong>l'équipe de production</strong> (les développeurs et les chefs de projet) pour m'avoir transmis des méthodes de travail exemplaires ainsi qu'une organisation solide.
+    <br>Enfin, je suis reconnaissant envers ceux qui m'ont accompagné quotidiennement et qui ont pris le temps de me transmettre leur savoir-faire solide : <strong>Nassim Talbi</strong> et <strong>Yoan Wache</strong>, ainsi que mes tuteurs, <strong>Jeremy Bouhour</strong> de l'entreprise et <strong>Assef Chmeiss</strong> de l'école.
+    <br><br>Je tiens également à exprimer ma gratitude envers <strong>Mme Laurence Membré</strong> et les organisateurs du forum des stages à l'IUT de Lens. Leur soutien a été d'une aide précieuse pour de nombreux étudiants, dont je fais partie, dans leurs recherches de stage.
+</p>
+</div>
+{% endblock %}
